@@ -8,7 +8,7 @@ LABEL "com.github.actions.color"="blue"
 LABEL "repository"="http://github.com/jovrtn/github-action-wpengine-git-deploy"
 LABEL "maintainer"="Jesse L.K. Overton <jesse@ovrtn.com>"
 
-RUN apk update && apk add curl openssh bash
+RUN apk update && apk add curl openssh bash py-pip && pip install docker-compose
 
 # docker-machine
 RUN curl -L https://github.com/docker/machine/releases/download/v0.16.1/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
