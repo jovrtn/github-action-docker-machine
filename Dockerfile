@@ -1,4 +1,4 @@
-FROM docker:stable
+FROM docker:dind
 
 LABEL "com.github.actions.name"="GitHub Action Docker Machine"
 LABEL "com.github.actions.description"="An action for docker-machine"
