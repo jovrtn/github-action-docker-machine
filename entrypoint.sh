@@ -26,4 +26,7 @@ docker-machine create --driver generic --generic-ip-address="$DOCKER_MACHINE_IP"
 docker-machine env "$DOCKER_MACHINE_NAME" --shell sh
 # eval "$(docker-machine env $DOCKER_MACHINE_NAME)"
 
+docker-compose build
 docker-compose up -d
+
+exit 0
