@@ -22,3 +22,5 @@ chmod 600 "$SSH_KEY_PRIVATE_PATH"
 chmod 644 "$SSH_KEY_PUBLIC_PATH"
 
 docker-machine create --driver generic --generic-ip-address=$DOCKER_MACHINE_IP --generic-ssh-key=$SSH_KEY_PRIVATE_PATH --generic-ssh-user=$SSH_USER --engine-storage-driver=overlay $DOCKER_MACHINE_NAME
+
+exit
